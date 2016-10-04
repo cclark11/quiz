@@ -1,0 +1,27 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
+}
+
+button, input[type="text"] {
+  padding: 5px;
+}
+#newGame{
+	margin:20px;
+}
+header{
+	font-size:25px;
+	padding:20px;
+	margin:0 auto;
+	text-align: center;
+}
+#question{
+	padding:20px;
+}
+#answers{
+	padding:20px;
+	text-align:left;
+}
+#next{
+	margin-left:20px;
+}
