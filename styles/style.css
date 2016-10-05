@@ -1,27 +1,122 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Arial Black", Gadget, sans-serif;
   font-size:15px;
+
+}
+body::after{
+	content:"";
+	background-image: url("https://static.vecteezy.com/system/resources/previews/000/092/307/original/free-gymnastics-silhouette-vector.jpg");
+ 	opacity:.4;
+ 	top:0;
+ 	left:0;
+ 	bottom:0;
+ 	right:0;
+ 	position:absolute;
+ 	z-index:-1;
 }
 
-button, input[type="text"] {
-  padding: 5px;
-}
-#newGame{
-	margin:20px;
+.newGame{
+	margin:15px;
+	font-weight: bold;
+	padding:5px;
 }
 header{
 	font-size:25px;
-	padding:20px;
+	padding:15px;
 	margin:0 auto;
+	display:inline-block;
 	text-align: center;
+	font-weight: bold;
+	font-family: "Arial Black", Gadget, sans-serif;
 }
-#question{
-	padding:20px;
+.box {
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:30%;
+	padding-right:30%;
 }
-#answers{
-	padding:20px;
-	text-align:left;
+@media screen and (min-width: 500px) {
 }
 #next{
-	margin-left:20px;
+	margin-top:15px;
+	margin-left:15px;
+	font-weight: bold;
+	padding:5px;
+	text-align:center;
+}
+#question,#answers,.count{
+	padding:15px;
+}
+#score,#end{
+	padding-left:15px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 20;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-header {
+    padding: 15px;
+    background-color: lightblue;
+    color: white;
+    font-size:20px;
+    padding-left:30px;
+}
+
+/* Modal Body */
+.modal-body {padding: 15px;}
+/* Modal Content/Box */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+/* Modal Footer */
+.modal-footer {
+    padding: 15px;
+    background-color: lightblue;
+    color: white;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 20; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 20; opacity: 1}
 }
